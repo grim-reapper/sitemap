@@ -1,0 +1,28 @@
+{
+    "name": "finalstrike/sitemap",
+    "description": "Create and generate sitemaps with ease",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imran Ali",
+            "email": "imran@netlawman.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FinalStrike\\Sitemap\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FinalStrike\\Sitemap\\SitemapServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
