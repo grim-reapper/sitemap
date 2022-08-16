@@ -17,9 +17,9 @@ class Url
 
     public $url;
 
-    public $lastModificationDate;
+    public Carbon $lastModificationDate;
 
-    public Carbon $changeFrequency;
+    public $changeFrequency;
 
     public $priority = 0.8;
 
