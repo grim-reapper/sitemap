@@ -19,7 +19,7 @@ class Url
 
     public $lastModificationDate;
 
-    public $changeFrequency;
+    public Carbon $changeFrequency;
 
     public $priority = 0.8;
 
@@ -45,8 +45,7 @@ class Url
 
     public function setLastModificationDate(DateTimeInterface $lastModificationDate): Url
     {
-        //$this->lastModificationDate = Carbon::instance($lastModificationDate);
-        $this->lastModificationDate = $lastModificationDate;
+        $this->lastModificationDate = Carbon::instance($lastModificationDate);
         return $this;
     }
 
