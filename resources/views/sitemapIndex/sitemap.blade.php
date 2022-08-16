@@ -4,6 +4,6 @@
     @endif
 
     @if (! empty($tag->lastModificationDate))
-    <lastmod>{{ $tag->lastModificationDate->format(DateTime::ATOM) }}</lastmod>
+    <lastmod>{{ $tag->lastModificationDate->format('Y-m-d') }}</lastmod>
     @endif
 </sitemap>
